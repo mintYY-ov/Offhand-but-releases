@@ -56,7 +56,7 @@ set_project(mod_name)
 
 package("Runtime-Importer")
     set_kind("binary")
-    set_homepage("https://github.com/mintYY-ov/Runtime-Importer")
+    set_homepage("https://github.com/FederoxDev/Runtime-Importer")
     set_description("The runtime importer enables importing functions and variables from the game just by defining annotations in header files")
 
     on_load(function (package)
@@ -65,7 +65,7 @@ package("Runtime-Importer")
         import("utils.archive")
 
         local releases_file = path.join(os.tmpdir(), "runtime-importer.releases.json")
-        http.download("https://api.github.com/repos/mintYY-ov/Runtime-Importer/releases/latest", releases_file)
+        http.download("https://api.github.com/repos/FederoxDev/Runtime-Importer/releases/latest", releases_file)
 
         local importer_dir = path.join(os.curdir(), ".importer");
         local bin_dir = path.join(importer_dir, "bin");
@@ -78,7 +78,7 @@ package("Runtime-Importer")
         if should_reinstall then
             print("Runtime-Importer is outdated, reinstalling...")
             print("Latest version is " .. latest_tag)
-            local url = "https://github.com/mintYY-ov/Runtime-Importer/releases/latest/download/Runtime-Importer.zip"
+            local url = "https://github.com/FederoxDev/Runtime-Importer/releases/latest/download/Runtime-Importer.zip"
             local zipfile = path.join(os.tmpdir(), "Runtime-Importer.zip")
             print("Installing Runtime-Importer...")
 

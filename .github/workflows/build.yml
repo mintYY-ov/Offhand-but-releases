@@ -22,13 +22,6 @@ jobs:
                   path: Amethyst
                   submodules: recursive
 
-            - name: Create .lib directory
-              shell: powershell
-              run: |
-                mkdir .importer
-                cd .importer
-                mkdir lib
-
             # Build dependencies
             - name: Install Build Tools
               shell: powershell
@@ -80,6 +73,10 @@ jobs:
               run: |
                 Import-Module $env:ChocolateyInstall\helpers\chocolateyProfile.psm1
                 refreshenv
+                mkdir .importer
+                cd importer
+                mkdir lib
+                cd D:\a\Offhand-but-releases\Offhand-but-releases
 
                 Invoke-WebRequest https://www.nasm.us/pub/nasm/releasebuilds/2.16.03/win64/nasm-2.16.03-win64.zip -OutFile nasm.zip
                 Expand-Archive nasm.zip -DestinationPath C:\nasm

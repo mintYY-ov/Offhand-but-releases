@@ -1,18 +1,18 @@
 #pragma once
 #include <amethyst/runtime/ModContext.hpp>
 #include <amethyst/runtime/events/InputEvents.hpp>
-#include <minecraft/src/common/network/packet/Packet.hpp>
-#include <minecraft/src/common/network/PacketHandlerDispatcherInstance.hpp>
-#include <minecraft/src/common/network/PacketSender.hpp>
-#include <minecraft/src-client/common/client/player/LocalPlayer.hpp>
-#include <minecraft/src/common/network/ServerNetworkHandler.hpp>
-#include <minecraft/src/common/server/ServerPlayer.hpp>
+#include <mc/src/common/network/packet/Packet.hpp>
+#include <mc/src/common/network/PacketHandlerDispatcherInstance.hpp>
+#include <mc/src/common/network/PacketSender.hpp>
+#include <mc/src-client/common/client/player/LocalPlayer.hpp>
+#include <mc/src/common/network/ServerNetworkHandler.hpp>
+#include <mc/src/common/server/ServerPlayer.hpp>
 #include <amethyst/Formatting.hpp>
-#include <minecraft/src-deps/input/MouseDevice.hpp>
-#include <minecraft/src/common/world/entity/components/ActorEquipmentComponent.hpp>
-#include <minecraft/src/common/world/level/ILevel.hpp>
-#include <minecraft/src/common/world/actor/player/Inventory.hpp>
-#include <minecraft/src/common/world/SimpleContainer.hpp>
+#include <mc/src-deps/input/MouseDevice.hpp>
+#include <mc/src/common/world/entity/components/ActorEquipmentComponent.hpp>
+#include <mc/src/common/world/level/ILevel.hpp>
+#include <mc/src/common/world/actor/player/Inventory.hpp>
+#include <mc/src/common/world/SimpleContainer.hpp>
 
 class SwapOffhandPacket : public Amethyst::CustomPacket {
 public:

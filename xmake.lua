@@ -69,6 +69,7 @@ package("Runtime-Importer")
 
         local importer_dir = path.join(os.curdir(), ".importer");
         local bin_dir = path.join(importer_dir, "bin");
+        local InputPath = path.join(importer_dir, "lib");
         local release = json.loadfile(releases_file)
         local latest_tag = release.tag_name
         local installed_version_file = path.join(importer_dir, "version.txt")

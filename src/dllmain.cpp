@@ -1,7 +1,7 @@
 ﻿#include "dllmain.hpp"
 #include <functional>
 #include <amethyst/runtime/events/RegisterEvents.hpp>
-#include <minecraft/src/common/world/item/registry/ItemRegistry.hpp>
+#include <mc/src/common/world/item/registry/ItemRegistry.hpp>
 #include "features/SwapOffhandKey.hpp"
 #include "features/Offhand.hpp"
 #include "features/OffhandHud.hpp"

@@ -161,6 +161,7 @@ target(mod_name)
         local generated_dir = path.join(importer_dir)
         local input_dir = path.join(amethystApiPath, "src"):gsub("\\", "/")
         local include_dir = path.join(amethystApiPath, "include"):gsub("\\", "/")
+        local InputPath = path.join(amethystApiPath, "src"):gsub("\\", "/")
         
         local gen_sym_args = {
             ".importer/bin/Amethyst.SymbolGenerator.exe",

@@ -19,7 +19,7 @@ void OnRegisterItems(RegisterItemsEvent &event)
 }
 
 // Ran when the mod is loaded into the game by AmethystRuntime
-ModFunction void Initialize(AmethystContext& ctx, const Mod& mod)
+ModFunction void Initialize(AmethystContext& ctx, const Amethyst::Mod& mod)
 {
     Amethyst::InitializeAmethystMod(ctx, mod);
     Amethyst::GetEventBus().AddListener<RegisterItemsEvent>(&OnRegisterItems);

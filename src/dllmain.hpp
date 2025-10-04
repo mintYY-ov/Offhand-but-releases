@@ -3,8 +3,8 @@
 #include <Windows.h>
 #include <amethyst/runtime/ModContext.hpp>
 #include <amethyst/runtime/events/GameEvents.hpp> // OnStartJoinGameEvent
-#include <minecraft/src/common/world/item/ItemStack.hpp>
-#include <minecraft/src/common/world/item/Item.hpp>
+#include <mc/src/common/world/item/ItemStack.hpp>
+#include <mc/src/common/world/item/Item.hpp>
 
 #define ModFunction extern "C" __declspec(dllexport)
 

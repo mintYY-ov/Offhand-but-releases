@@ -1,11 +1,11 @@
 #pragma once
 #include <amethyst/runtime/ModContext.hpp>
-#include <minecraft/src-client/common/client/renderer/game/ItemInHandRenderer.hpp>
-#include <minecraft/src-client/common/client/renderer/BaseActorRenderContext.hpp>
-#include <minecraft/src-client/common/client/world/item/ItemIconManager.hpp>
-#include <minecraft/src/common/util/Timer.hpp>
-#include <minecraft/src/common/Minecraft.hpp>
-#include <minecraft/src-deps/core/math/Math.hpp>
+#include <mc/src-client/common/client/renderer/game/ItemInHandRenderer.hpp>
+#include <mc/src-client/common/client/renderer/BaseActorRenderContext.hpp>
+#include <mc/src-client/common/client/world/item/ItemIconManager.hpp>
+#include <mc/src/common/util/Timer.hpp>
+#include <mc/src/common/Minecraft.hpp>
+#include <mc/src-deps/core/math/Math.hpp>
 #include "features/OffhandSwingComponent.hpp"
 
 SafetyHookInline _ItemInHandRenderer__transformOffhandItem;

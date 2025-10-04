@@ -22,6 +22,13 @@ jobs:
                   path: Amethyst
                   submodules: recursive
 
+            - name: Create .lib directory
+              shell: powershell
+              run: |
+                mkdir .importer
+                cd .importer
+                mkdir lib
+
             # Build dependencies
             - name: Install Build Tools
               shell: powershell
